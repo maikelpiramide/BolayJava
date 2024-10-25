@@ -10,8 +10,8 @@ public class ConnectionMySql {
         if(connection == null) {
             try {
                 connection = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/manager",
-                        "root", "root");
+                        "jdbc:mysql://database-boley.c54kcq6ein9a.us-east-1.rds.amazonaws.com:3306/boleybol",
+                        "admin", "admin7038");
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
